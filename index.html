@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webfolio Website</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- splide js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <i class="ri-menu-fill" id="toggle"></i>
+        <div class="logo">
+            <a href="#">Web Programmer</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+        </ul>
+        <div class="nav_btn btn">
+            <a href="#">Let's contact</a>
+        </div>
+    </nav>
+
+    <div class="hero section">
+        <div class="hero_title section_title">
+            <span class="span">Hello! There</span>
+            <h1>
+                I'am Maulana
+                <span id="text">Ibrahim</span>
+            </h1>
+            <h3>Web Programmer</h3>
+            <p>I'am full-stack web developer with expertise in both frontend and backend development. Experience in
+                working with popular web development Frameworks such as React, Vue, Laravel, and CodeIgniter</p>
+            <div class="hero_btn">
+                <button class="btn">
+                    <a href="#">Contact Me</a>
+                </button>
+                <img src="Image/arrow-down-big.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="splide MySplide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide My_Slide">
+                    <img src="Image/star.png" alt="">
+                    <h4>Backend Developer</h4>
+                </li>
+                <li class="splide__slide My_Slide">
+                    <img src="Image/star.png" alt="">
+                    <h4>Web Development</h4>
+                </li>
+                <li class="splide__slide My_Slide">
+                    <img src="Image/star.png" alt="">
+                    <h4>Fullstack Web</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- splide js auto scroll cdn -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- script Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
