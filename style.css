@@ -758,6 +758,12 @@ body{
 }
 
 @media screen and (max-width:500px){
+    .logo{
+        display: none;
+    }
+    .navbar{
+        padding-inline: 15px;
+    }
     .section_title2 {
         flex-direction: column;
         gap: 50px;
