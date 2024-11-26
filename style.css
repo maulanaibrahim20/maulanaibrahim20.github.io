@@ -368,6 +368,24 @@ body{
     top: 87%;
     transform: rotate(-35deg);
 }
+.icon5{
+    left: 40%;
+    top: 97%;
+    transform: rotate(20deg);
+}
+.icon6{
+    left: 78%;
+    bottom: 86%;
+    transform: rotate(-37deg);
+}
+.icon7{
+    right: 96%;
+}
+.icon8{
+    transform: rotate(10deg);
+    left: 35%;
+    bottom: 95%;
+}
 
 .about_title{
     width: 60%;
