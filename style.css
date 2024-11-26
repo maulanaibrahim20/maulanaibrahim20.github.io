@@ -116,6 +116,67 @@
     width: 100%;
 }
 
+.section_title2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--white);
+}
+
+.section_title2 h3{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.section_title2 h3 span{
+    font-weight: 300;
+}
+
+.section_title2 .span{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: var(--primay-color);
+}
+
+.headings{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section_title2 .main_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main_btn .btn2{
+    height: 40px;
+    border: 1px solid var(--white);
+}
+
+.main_btn i{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white);
+    transition: .4s;
+}
+
+.main_btn:hover i{
+    transform: rotate(-140deg);
+    background-color: var(--primay-color);
+    border: 1px solid var(--primay-color);
+}
+
 
 body{
     background-color: var(--black);
@@ -437,6 +498,103 @@ body{
     color: var(--white-light)
 }
 
+/* services section */
+
+.services{
+    flex-direction: column;
+}
+.service_wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+    place-items: center;
+    gap: 50px;
+}
+.service_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--back-light);
+    padding: 30px;
+    border: 1px solid var(--black);
+    transition: .6s;
+}
+.service_card:hover{
+    border: 1px solid var(--primay-color);
+}
+
+.service_image{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.service_image img{
+    width: 15%;
+    height: 100%;
+    opacity: 0.5;
+    transition: .6s;
+}
+
+.service_card_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.service_card_info h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0px 0px 40px;
+}
+.service_card_info ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 0px 30px;
+}
+.service_card_info ul li span{
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: var(--border);
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.service_card_info p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.service_card_info i{
+    width: 70px;
+    height: 70px;
+    background-color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: .6s;
+}
+
+.service_card:hover .service_card_info i{
+    background-color: var(--primay-color);
+    transform: rotate(40deg);
+}
+
+.service_card:hover .service_image img{
+    opacity: 1;
+}
 
 @media screen and (max-width:1400px){
     .menu li{
@@ -458,10 +616,24 @@ body{
         margin-bottom: 30px;
         width: 100%;
     }
+    .service_wrap{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .service_card{
+        gap: 30px;
+    }
+    .service_card_info p{
+        margin-bottom: 30px;
+    }
 }
 
 
 @media screen and (max-width:1200px){
+    .section_title2 h3{
+        font-size: 3rem;
+    }
+
     .section_title p{
         font-size: 0.9rem;
         line-height: 1.5rem;
@@ -512,6 +684,9 @@ body{
     .counter img{
         width: 15%;
     }
+    .service_wrap{
+        grid-template-columns: repeat(2,1fr);
+    }
 
 }
 
@@ -550,6 +725,9 @@ body{
 }
 
 @media screen and (max-width:768px){
+    .section_titl2 h3{
+        font-size: 2.5rem;
+    }
     .hero{
         background-position: right center;
     }
@@ -574,9 +752,25 @@ body{
     .about-title p{
         width: 100%;
     }
+    .service_wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media screen and (max-width:500px){
+    .section_title2 {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    .headings{
+        width: 100%;
+        text-align: center;
+    }
+    .section_title2 .main_btn{
+        width: 100%;
+        text-align: center;
+    }
     .hero_title{
         padding-top: 20%;
     }
