@@ -26,3 +26,27 @@ window.onload = function () {
     },
   }).mount({ AutoScroll: window.splide.Extensions.AutoScroll });
 };
+
+var tstsplide = new Splide(".tst_splide", {
+  type: "loop",
+  drag: "free",
+  focus: "center",
+  perPage: 3,
+  gap: "2rem",
+  pagination: false,
+  autoplay: true,
+  loop: true,
+  perMove: 1,
+  breakpoints: {
+    1200: {
+      perPage: 2,
+    },
+    900: {
+      perPage: 1.5,
+    },
+    500: {
+      perPage: 1,
+    },
+  },
+});
+tstsplide.mount();

@@ -831,6 +831,91 @@ body{
     font-weight: 700;
 }
 
+/* Testimonials Section */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    gap: 80px;
+}
+
+.testimonials_title{
+    padding-left: 12%;
+}
+.testimonials_slide{
+    width: 100%;
+    border: var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--white);
+    border-radius: 10px;
+}
+.tst_splide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12%;
+}
+
+.tst_top{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.tst_text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.testimonials_slide p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 90%;
+    line-height: 2rem;
+    padding-bottom: 20px;
+    color: var(--white-light);
+}
+
+.tst_details{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    border: var(--border);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+.tst_image{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tst_image img{
+    width: 100%;
+    object-fit: cover;
+}
+.tst_content h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.tst_content span{
+    font-size: 0.9rem;
+    columns : var(--white-light)
+}
+
+
+
 @media screen and (max-width:1400px){
     .menu li{
         padding: 0px 10px;
@@ -1070,6 +1155,9 @@ body{
     .skills_wrap{
         gap: 50px;
     }
+    .testimonials_slide p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -1110,10 +1198,16 @@ body{
         flex-direction: column;
     }
     .skills_wrap{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .skill_container{
         width: 40%;
         margin: 0 auto;
+    }
+    .skill_num span{
+        font-size: 25px;
+    }
+    .testimonials_title{
+        padding: 0px 12%;
     }
 }
